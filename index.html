@@ -21,23 +21,27 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo">Prestige <span>Realty</span></a>
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-btn active" id="btn-en" data-lang="en">EN</button>
+      <button class="lang-btn" id="btn-hi" data-lang="hi">हि</button>
+    </div>
     <div class="nav-links">
-      <a href="#why">Why Us</a>
-      <a href="#properties">Properties</a>
-      <a href="#services">Services</a>
-      <a href="#team">Our Agents</a>
-      <a href="#contact" class="nav-cta">Book a Tour</a>
+      <a href="#why" data-i18n="nav-why">Why Us</a>
+      <a href="#properties" data-i18n="nav-properties">Properties</a>
+      <a href="#services" data-i18n="nav-services">Services</a>
+      <a href="#team" data-i18n="nav-team">Our Agents</a>
+      <a href="#contact" class="nav-cta" data-i18n="nav-cta">Book a Tour</a>
     </div>
     <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="nav-mobile" id="navMobile">
-    <a href="#why">Why Us</a>
-    <a href="#properties">Properties</a>
-    <a href="#services">Services</a>
-    <a href="#team">Our Agents</a>
-    <a href="#contact" class="nav-cta">Book a Tour</a>
+    <a href="#why" data-i18n="nav-why">Why Us</a>
+    <a href="#properties" data-i18n="nav-properties">Properties</a>
+    <a href="#services" data-i18n="nav-services">Services</a>
+    <a href="#team" data-i18n="nav-team">Our Agents</a>
+    <a href="#contact" class="nav-cta" data-i18n="nav-cta">Book a Tour</a>
   </div>
 </nav>
 
@@ -48,22 +52,22 @@
     <div class="hero-overlay"></div>
   </div>
   <div class="hero-content">
-    <p class="hero-eyebrow">Premium Real Estate · Mumbai · Pune · Goa</p>
-    <h1 class="hero-headline">Find Your Perfect<br/><em>Dream Property.</em></h1>
-    <p class="hero-sub">Mumbai's most trusted luxury real estate firm. From iconic penthouses to beachfront villas — we find properties that match your lifestyle, not just your budget.</p>
+    <p class="hero-eyebrow" data-i18n="hero-eyebrow">Premium Real Estate · Mumbai · Pune · Goa</p>
+    <h1 class="hero-headline" data-i18n="hero-headline">Find Your Perfect<br/><em>Dream Property.</em></h1>
+    <p class="hero-sub" data-i18n="hero-sub">Mumbai's most trusted luxury real estate firm. From iconic penthouses to beachfront villas — we find properties that match your lifestyle, not just your budget.</p>
 
     <!-- PROPERTY SEARCH BAR -->
     <div class="hero-search" id="hero-search">
       <div class="search-tabs">
-        <button class="search-tab active" id="tab-buy">Buy</button>
-        <button class="search-tab" id="tab-rent">Rent</button>
-        <button class="search-tab" id="tab-invest">Invest</button>
+        <button class="search-tab active" id="tab-buy" data-i18n="tab-buy">Buy</button>
+        <button class="search-tab" id="tab-rent" data-i18n="tab-rent">Rent</button>
+        <button class="search-tab" id="tab-invest" data-i18n="tab-invest">Invest</button>
       </div>
       <div class="search-bar">
         <div class="search-field">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <select id="search-location" aria-label="Location">
-            <option value="">Location</option>
+            <option value="" data-i18n="search-loc">Location</option>
             <option>Bandra West</option>
             <option>Juhu</option>
             <option>Worli</option>
@@ -76,7 +80,7 @@
         <div class="search-field">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           <select id="search-type" aria-label="Property Type">
-            <option value="">Property Type</option>
+            <option value="" data-i18n="search-type">Property Type</option>
             <option>Villa</option>
             <option>Penthouse</option>
             <option>Apartment</option>
@@ -88,7 +92,7 @@
         <div class="search-field">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           <select id="search-budget" aria-label="Budget">
-            <option value="">Budget</option>
+            <option value="" data-i18n="search-budget">Budget</option>
             <option>₹1Cr – ₹3Cr</option>
             <option>₹3Cr – ₹7Cr</option>
             <option>₹7Cr – ₹15Cr</option>
@@ -98,15 +102,15 @@
         </div>
         <button class="search-btn" id="search-btn" aria-label="Search properties">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <span class="search-btn-text">Search</span>
+          <span class="search-btn-text" data-i18n="search-btn">Search</span>
         </button>
       </div>
     </div>
 
     <div class="hero-trust">
-      <div class="trust-pill"><span class="tp-dot"></span>800+ Properties Sold</div>
-      <div class="trust-pill"><span class="tp-dot"></span>15 Years of Excellence</div>
-      <div class="trust-pill"><span class="tp-dot"></span>4.9★ on Google</div>
+      <div class="trust-pill"><span class="tp-dot"></span><span data-i18n="trust-1">800+ Properties Sold</span></div>
+      <div class="trust-pill"><span class="tp-dot"></span><span data-i18n="trust-2">15 Years of Excellence</span></div>
+      <div class="trust-pill"><span class="tp-dot"></span><span data-i18n="trust-3">4.9★ on Google</span></div>
     </div>
   </div>
   <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
@@ -117,27 +121,27 @@
   <div class="stats-inner">
     <div class="stat-item">
       <span class="stat-num">₹2,400 Cr+</span>
-      <span class="stat-label">Total Deals Closed</span>
+      <span class="stat-label" data-i18n="stat-1">Total Deals Closed</span>
     </div>
     <div class="stat-sep">✦</div>
     <div class="stat-item">
       <span class="stat-num">800+</span>
-      <span class="stat-label">Properties Sold</span>
+      <span class="stat-label" data-i18n="stat-2">Properties Sold</span>
     </div>
     <div class="stat-sep">✦</div>
     <div class="stat-item">
       <span class="stat-num">15 Years</span>
-      <span class="stat-label">Market Experience</span>
+      <span class="stat-label" data-i18n="stat-3">Market Experience</span>
     </div>
     <div class="stat-sep">✦</div>
     <div class="stat-item">
       <span class="stat-num">98%</span>
-      <span class="stat-label">Client Satisfaction</span>
+      <span class="stat-label" data-i18n="stat-4">Client Satisfaction</span>
     </div>
     <div class="stat-sep">✦</div>
     <div class="stat-item">
       <span class="stat-num">4.9★</span>
-      <span class="stat-label">Google Rating</span>
+      <span class="stat-label" data-i18n="stat-5">Google Rating</span>
     </div>
   </div>
 </div>
@@ -146,63 +150,51 @@
 <section class="why" id="why">
   <div class="container">
     <div class="section-header">
-      <p class="section-eyebrow">Why Prestige Realty</p>
-      <h2 class="section-title">The Agency Others Get<br/><em>Compared Against</em></h2>
-      <p class="section-desc">Hundreds of agencies operate in Mumbai. Here's why discerning buyers and investors choose us — and refer us to everyone they know.</p>
+      <p class="section-eyebrow" data-i18n="why-eyebrow">Why Prestige Realty</p>
+      <h2 class="section-title" data-i18n="why-title">The Agency Others Get<br/><em>Compared Against</em></h2>
+      <p class="section-desc" data-i18n="why-desc">Hundreds of agencies operate in Mumbai. Here's why discerning buyers and investors choose us — and refer us to everyone they know.</p>
     </div>
     <div class="why-grid">
       <div class="why-card float-1" id="why-1">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <div class="why-card-body">
-          <h3>Verified Listings Only</h3>
-          <p>Every property is legally verified, RERA-registered, and personally inspected. No ghost listings. No surprises.</p>
+          <h3 data-i18n="why-1-h">Verified Listings Only</h3>
+          <p data-i18n="why-1-p">Every property is legally verified, RERA-registered, and personally inspected. No ghost listings. No surprises.</p>
         </div>
       </div>
       <div class="why-card float-2" id="why-2">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
         <div class="why-card-body">
-          <h3>Zero-Pressure Advisory</h3>
-          <p>We recommend only what fits your lifestyle and financial goals — nothing more, never less.</p>
+          <h3 data-i18n="why-2-h">Zero-Pressure Advisory</h3>
+          <p data-i18n="why-2-p">We recommend only what fits your lifestyle and financial goals — nothing more, never less.</p>
         </div>
       </div>
       <div class="why-card float-3" id="why-3">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
         <div class="why-card-body">
-          <h3>Exclusive Off-Market Access</h3>
-          <p>Our 15-year network gives you first access to properties that never appear publicly — before any other buyer knows.</p>
+          <h3 data-i18n="why-3-h">Exclusive Off-Market Access</h3>
+          <p data-i18n="why-3-p">Our 15-year network gives you first access to properties that never appear publicly — before any other buyer knows.</p>
         </div>
       </div>
       <div class="why-card float-2" id="why-4">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg></div>
         <div class="why-card-body">
-          <h3>End-to-End Support</h3>
-          <p>From first visit to registry day — legal, loans, documentation. One contact, total accountability throughout.</p>
+          <h3 data-i18n="why-4-h">End-to-End Support</h3>
+          <p data-i18n="why-4-p">From first visit to registry day — legal, loans, documentation. One contact, total accountability throughout.</p>
         </div>
       </div>
       <div class="why-card float-1" id="why-5">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
         <div class="why-card-body">
-          <h3>Best Price Guarantee</h3>
-          <p>We've negotiated below asking price for 94% of our clients. Our market data ensures you never overpay.</p>
+          <h3 data-i18n="why-5-h">Best Price Guarantee</h3>
+          <p data-i18n="why-5-p">We've negotiated below asking price for 94% of our clients. Our market data ensures you never overpay.</p>
         </div>
       </div>
       <div class="why-card float-3" id="why-6">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
         <div class="why-card-body">
-          <h3>Truly Private Experience</h3>
-          <p>Private viewings, confidential valuations, and NDA-protected transactions for clients who value discretion.</p>
+          <h3 data-i18n="why-6-h">Truly Private Experience</h3>
+          <p data-i18n="why-6-p">Private viewings, confidential valuations, and NDA-protected transactions for clients who value discretion.</p>
         </div>
       </div>
     </div>
@@ -226,19 +218,19 @@
 <section class="properties" id="properties">
   <div class="container">
     <div class="section-header">
-      <p class="section-eyebrow">Featured Properties</p>
-      <h2 class="section-title">Handpicked Exclusives.<br/><em>Only the Finest.</em></h2>
-      <p class="section-desc">Every listing here has been personally curated by our senior advisors. These aren't just properties — they're lifestyle statements.</p>
+      <p class="section-eyebrow" data-i18n="prop-eyebrow">Featured Properties</p>
+      <h2 class="section-title" data-i18n="prop-title">Handpicked Exclusives.<br/><em>Only the Finest.</em></h2>
+      <p class="section-desc" data-i18n="prop-desc">Every listing here has been personally curated by our senior advisors. These aren't just properties — they're lifestyle statements.</p>
     </div>
 
     <!-- Filter Pills -->
     <div class="prop-filters" id="prop-filters">
-      <button class="prop-filter active" data-filter="all" id="filter-all">All Properties</button>
-      <button class="prop-filter" data-filter="villa" id="filter-villa">Villas</button>
-      <button class="prop-filter" data-filter="penthouse" id="filter-penthouse">Penthouses</button>
-      <button class="prop-filter" data-filter="apartment" id="filter-apartment">Apartments</button>
-      <button class="prop-filter" data-filter="estate" id="filter-estate">Estates</button>
-      <button class="prop-filter" data-filter="commercial" id="filter-commercial">Commercial</button>
+      <button class="prop-filter active" data-filter="all" id="filter-all" data-i18n="filter-all">All Properties</button>
+      <button class="prop-filter" data-filter="villa" id="filter-villa" data-i18n="filter-villa">Villas</button>
+      <button class="prop-filter" data-filter="penthouse" id="filter-penthouse" data-i18n="filter-pent">Penthouses</button>
+      <button class="prop-filter" data-filter="apartment" id="filter-apartment" data-i18n="filter-apt">Apartments</button>
+      <button class="prop-filter" data-filter="estate" id="filter-estate" data-i18n="filter-estate">Estates</button>
+      <button class="prop-filter" data-filter="commercial" id="filter-commercial" data-i18n="filter-comm">Commercial</button>
     </div>
   </div>
 
@@ -750,9 +742,9 @@
   <div class="final-cta-bg"></div>
   <div class="container">
     <div class="final-cta-content">
-      <p class="section-eyebrow light">Your Property Journey Starts Here</p>
-      <h2 class="final-headline">Your First Consultation<br/>Is Completely Free &<br/><em>Obligation-Free.</em></h2>
-      <p class="final-sub">30 minutes with a senior property advisor. Honest market insights. A personalised shortlist. No pressure to proceed — just expert advice.</p>
+      <p class="section-eyebrow light" data-i18n="cta-eyebrow">Your Property Journey Starts Here</p>
+      <h2 class="final-headline" data-i18n="cta-title">Your First Consultation<br/>Is Completely Free &<br/><em>Obligation-Free.</em></h2>
+      <p class="final-sub" data-i18n="cta-sub">30 minutes with a senior property advisor. Honest market insights. A personalised shortlist. No pressure to proceed — just expert advice.</p>
       <div class="final-form" id="final-form">
         <div class="form-row">
           <input type="text" class="form-input" id="form-name" placeholder="Your Full Name" aria-label="Full Name"/>
@@ -776,7 +768,7 @@
             <option>₹30Cr+</option>
           </select>
         </div>
-        <button class="btn btn-primary btn-large" id="form-submit">Book My Free Consultation</button>
+        <button class="btn btn-primary btn-large" id="form-submit" data-i18n="cta-btn">Book My Free Consultation</button>
       </div>
       <div class="clinic-hours">
         <span>📍 BKC, Bandra East, Mumbai</span>
@@ -837,7 +829,7 @@
 <!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/919876543210?text=Hi%20Prestige%20Realty%2C%20I%27d%20like%20to%20book%20a%20free%20consultation." class="whatsapp-float" id="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-  <span>Chat with Us</span>
+  <span data-i18n="wa-text">Chat with Us</span>
 </a>
 
 <script src="script.js"></script>

@@ -73,6 +73,20 @@ a{text-decoration:none;color:inherit}
 @media(max-width:880px){.nav-links{display:none}.nav-hamburger{display:flex}}
 .nav-mobile.open{display:flex}
 
+/* ── LANGUAGE SWITCH ── */
+.lang-switch{display:flex;align-items:center;gap:2px;background:rgba(201,168,108,.12);
+             border:1px solid rgba(201,168,108,.3);border-radius:50px;padding:3px;
+             margin-left:12px;transition:opacity .35s var(--ease),transform .35s var(--ease)}
+.lang-switch.hidden{opacity:0;pointer-events:none;transform:translateY(-6px)}
+.lang-btn{padding:4px 12px;border:none;background:transparent;border-radius:50px;
+          font-family:var(--ff-sans);font-size:.7rem;font-weight:700;letter-spacing:.06em;
+          text-transform:uppercase;color:rgba(255,255,255,.6);cursor:pointer;transition:all .2s}
+.lang-btn.active{background:var(--gold);color:var(--navy)}
+/* When nav is scrolled (white bg), darken the inactive text */
+.nav.scrolled .lang-switch{background:rgba(201,168,108,.1);border-color:rgba(201,168,108,.4)}
+.nav.scrolled .lang-btn{color:var(--text-md)}
+.nav.scrolled .lang-btn.active{background:var(--gold);color:var(--navy)}
+
 /* ── HERO ── */
 .hero{position:relative;height:100vh;min-height:640px;max-height:960px;
       display:flex;align-items:center;justify-content:center;overflow:hidden}
